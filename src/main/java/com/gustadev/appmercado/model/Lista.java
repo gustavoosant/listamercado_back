@@ -1,4 +1,4 @@
-package appmercado.model;
+package com.gustadev.appmercado.model;
 
 import jakarta.persistence.*;
 

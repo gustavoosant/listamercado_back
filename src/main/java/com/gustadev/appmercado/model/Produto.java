@@ -1,4 +1,4 @@
-package appmercado.model;
+package com.gustadev.appmercado.model;
 
 import jakarta.persistence.*;
 
@@ -9,7 +9,7 @@ public class Produto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)//No banco a chave primeira e autoincrementada, por isso o strategy como Identity
     @Column(name="id_produto")
     private Integer id;
-    @Column(name= "nome_produto", length= 70, nullable = false)
+    @Column(name= "nm_produto", length= 70, nullable = false)
     private String nome;
 
     public Integer getId() {

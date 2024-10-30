@@ -1,15 +1,15 @@
-package appmercado.service;
+package appmercado.services;
 
+import com.gustadev.appmercado.AppmercadoApplication;
+import com.gustadev.appmercado.model.Produto;
+import com.gustadev.appmercado.services.IProdutoService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import appmercado.model.Produto;
-import org.springframework.test.context.ContextConfiguration;
-
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-@SpringBootTest
-@ContextConfiguration(classes = ProdutoServiceImpl.class)
+
+@SpringBootTest(classes = AppmercadoApplication.class)
 public class ProdutoTests {
 
     @Autowired
